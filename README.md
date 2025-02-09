@@ -79,10 +79,10 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8080
 ---
 
 ### Step 4: Testing the Application
-# Option 1: Use Swagger UI
+#### Option 1: Use Swagger UI
 - Visit http://127.0.0.1:8080/docs to access the Swagger UI.
 - Use the Swagger interface to test API endpoints.
-# Option 2: Use the test Folder
+#### Option 2: Use the test Folder
 - Utilize the test folder to create customers using tools like ChatGPT.
-# Additional Reference:
+#### Additional Reference:
 Check out the  [Medium Article](https://verticalserve.medium.com/building-a-python-fastapi-crud-api-with-mvc-structure-13ec7636d8f2) for guidance on building and testing the application.
