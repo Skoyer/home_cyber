@@ -59,7 +59,7 @@ DB_PASSWORD=your_password
 DB_HOST=192.168.xx.yy
 DB_PORT=5432
 DB_NAME=cyber_project
-
+```
 ---
 
 ### Step 2: Configure Test Environment
@@ -67,7 +67,7 @@ DB_NAME=cyber_project
 ```plaintext
 OPENAI_API_KEY=your_api_key
 FASTAPI_URL=http://127.0.0.1:8080/api/customers/
-
+```
 ---
 
 ### Step 3: Running the Application
@@ -75,7 +75,7 @@ FASTAPI_URL=http://127.0.0.1:8080/api/customers/
 - Start the application using the following command:
 ```bash
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8080
-
+```
 ---
 
 ### Step 4: Testing the Application
