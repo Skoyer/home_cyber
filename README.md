@@ -32,14 +32,57 @@ The project is in its early stages, with future plans to expand into scanning an
 ### Prerequisites
 - **Python 3.10+**
 - **PostgreSQL 12+**
-- Tools for integration:
+- **ChatGPT API Key**
+- **Future** - Tools for integration:
   - **Nmap**
   - **Wireshark**
   - A DHCP Manager compatible with your network setup.
 
 ### Setup Instructions
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+# Setting Up and Running the Cyber Project
+
+### Prerequisites
+1. Ensure you have **PostgreSQL** set up and working.
+2. Verify that you can connect to PostgreSQL using a valid `userid` and `password`.
+
+---
+
+### Step 1: Configure Database Connection
+
+- Edit the `db/database.py` file.
+- Create an `.env` file in the `db` directory and include the required connection parameters:
+
+```plaintext
+DB_USER=your_userid
+DB_PASSWORD=your_password
+DB_HOST=192.168.xx.yy
+DB_PORT=5432
+DB_NAME=cyber_project
+
+---
+
+### Step 2: Configure Test Environment
+- Create a `.env` file in the `test` directory with the following parameters:
+```plaintext
+OPENAI_API_KEY=your_api_key
+FASTAPI_URL=http://127.0.0.1:8080/api/customers/
+
+---
+
+### Step 3: Running the Application
+- Navigate to the app directory.
+- Start the application using the following command:
+```bash
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8080
+
+---
+
+### Step 4: Testing the Application
+# Option 1: Use Swagger UI
+- Visit http://127.0.0.1:8080/docs to access the Swagger UI.
+- Use the Swagger interface to test API endpoints.
+# Option 2: Use the test Folder
+- Utilize the test folder to create customers using tools like ChatGPT.
+# Additional Reference:
+Check out the  [Medium Article](https://verticalserve.medium.com/building-a-python-fastapi-crud-api-with-mvc-structure-13ec7636d8f2) for guidance on building and testing the application.
