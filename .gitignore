@@ -9,6 +9,9 @@ __pycache__/
 env/
 venv/
 
+# Ignore Data Upload Files (this is files that get imported to database)
+data/
+
 # Ignore system-specific files
 .DS_Store
 Thumbs.db

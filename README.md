@@ -86,3 +86,9 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8080
 - Utilize the test folder to create customers using tools like ChatGPT.
 #### Additional Reference:
 Check out the  [Medium Article](https://verticalserve.medium.com/building-a-python-fastapi-crud-api-with-mvc-structure-13ec7636d8f2) for guidance on building and testing the application.
+
+---
+
+### Notes
+- Ensure all `.env` files contain the correct credentials and configuration values.
+- The Medium Article is an excellent resource for understanding the **MVC structure** and **CRUD API** implementation in FastAPI.
